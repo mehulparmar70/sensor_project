@@ -1,4 +1,5 @@
 {
+  "deploy": "npm install && npm run build && npm run start:dev",
   "name": "sensorapp",
   "version": "0.0.1",
   "description": "",
