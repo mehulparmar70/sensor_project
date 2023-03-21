@@ -58,6 +58,58 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+
+**API Endpoints**
+POST /sensors
+http://localhost:3000/api
+Creates a new sensor with the given attributes.
+Request Body
+Parameter	Type	Description
+name	   string	The name of the sensor.
+type	   string	The type of the sensor.
+location string The location of the sensor.
+
+
+**Response**
+{
+  "id": "123456"
+}
+
+
+**GET /sensors**
+Response
+[
+  {
+    "id": "123456",
+    "name": "Sensor1",
+    "type": "Temperature Sensor",
+    "location": "Living Room"
+  },
+  {
+    "id": "789012",
+    "name": "Sensor2",
+    "type": "Humidity Sensor",
+    "location": "Bedroom"
+  }
+]
+
+**GET /sensors/:id**
+Parameter	Type	Description
+id	string        The ID of the sensor.
+
+**Response**
+
+{
+  "id": "123456",
+  "name": "Sensor1",
+  "type": "Temperature Sensor",
+  "location": "Living Room"
+}
+
+
+**OpenAPI Specification**
+Added swagger to directly test api with GUI functionality.
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
