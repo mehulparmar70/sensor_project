@@ -107,6 +107,16 @@ id	string        The ID of the sensor.
 }
 
 
+**DELETE /sensors/:id**
+Parameter	Type	Description
+id	string        The ID of the sensor.
+
+**Response**
+
+{
+  "message" : "Sensor Deleted Successfully"
+}
+
 **OpenAPI Specification**
 Added swagger to directly test api with GUI functionality.
 
